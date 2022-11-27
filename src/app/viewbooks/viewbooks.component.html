@@ -3,157 +3,21 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 mt-4">
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of books">
 
                     <div class="card" >
-                        <img height="350px"  src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/to-kill-a-mockingbird-1623750649.jpg?crop=0.908xw:1.00xh;0.0466xw,0&resize=480:*" class="card-img-top" alt="...">
+                        <img height="350px"  src="{{i.image}}" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title text-center">To kill a mocking bird</h5>
-                          <p class="card-text text-center ">Harper Lee</p>
-                          <p >To Kill a Mockingbird is both a young girl's coming-of-age story and a darker drama about the roots and consequences of racism and prejudice, probing how good and evil can coexist within a single community or individual.</p>
+                          <h5 class="card-title text-center">{{i.title}}</h5>
+                          <p class="card-text text-center ">{{i.description}}</p>
                          
                           
                         </div>
                       </div>
                      </div>
 
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="375px"  src="https://assets-eu-01.kc-usercontent.com/bcd02f72-b50c-0179-8b4b-5e44f5340bd4/7847deca-a141-4da5-980e-49680e909ffc/the-shining-stephen-king-cover.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title text-center">Stephen King</h5>
-                          <p class="card-text text-center ">The shining</p>
-                          <p>The Shining centers on the life of Jack Torrance, a struggling writer and recovering alcoholic who accepts a position as the off-season caretaker of the historic Overlook Hotel in the Colorado Rockies.</p>
-                         
-                         
-                          
-                        </div>
-                      </div>
-                     </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="375px"  src="https://www.blackincbooks.com.au/sites/default/files/styles/book_large/public/9781925435795_FC_0.jpg?itok=cOSiXHsZ" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Rain Birds</h5>
-                            <p class="card-text text-center ">Harrier Mcknight</p>
-                            <p>Rain Birds is a powerful and lyrical novel about love, grief and loss, one that examines personal tragedy as set against global and environmental responsibilities, and how we negotiate our often-conflicting ideals.</p>
-
-                          
-                          
-                        </div>
-                      </div>
-                     </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card" >
-                        <img height="325px"  src="https://www.booklistqueen.com/wp-content/uploads/the-four-winds-kristin-hannah.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">The Four winds</h5>
-                          <p class="card-text text-center ">Kristin Hannah</p>
-                          <p>The Four Winds (St. Martin's) by Kristin Hannah is a sweeping saga of a family's struggle to survive set against the backdrop of The Great Depression and the Dust Bowl of America's Plains states. At the heart of the story is Elsa Wolcott, a tall, awkward girl who suffered rheumatic fever as a teenager.</p>
-                          
-                          
-                          
-                        </div>
-                      </div>
-                     </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card" >
-                        <img height="250px"  src="https://www.booklistqueen.com/wp-content/uploads/the-good-sister-sally-hepworth.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Good sisters</h5>
-                          <p class="card-text text-center ">Sally Hepworth</p>
-                          <p class="card-text text-center "></p>
-                          <p>What is the good sister book about?
-                            Image result for good sisters book description
-                            The novel follows two fraternal twins in their late 20s—Fern and Rose. Fern is on at the autistic spectrum and has sensory issues and Rose is her protector in many ways. We know that Fern did something very bad when they were children and Fern believes that without Rose, she could do something like that again</p>
-                         
-                          
-                        </div>
-                      </div>
-                     </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="370px"  src="https://www.booklistqueen.com/wp-content/uploads/the-survivors-jane-harper.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">The Survivors</h5>
-                          <p class="card-text text-center ">Jane Harper</p>
-                          <p class="card-text text-center "></p>
-                          <p>The Survivors is a dark, atmospheric read; about the secrets of the past and how it can affect you in your present. Kieron Elliot returns to his small coastal town, with his now partner, Mia and their infant daughter, Audrey.</p>
-                          
-                        </div>
-                      </div>
-                     </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card" >
-                        <img height="200px" src="https://www.booklistqueen.com/wp-content/uploads/how-beautiful-we-were-imbolo-mbue.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">How beautiful we were</h5>
-                          <p class="card-text text-center ">Imbolo Mbue</p>
-                          <p class="card-text text-center "></p>
-                          <p class="card-text text-center"></p>
-                          <p>Told from the perspective of a generation of children and the family of a girl named Thula who grows up to become a revolutionary, How Beautiful We Were is a masterful exploration of what happens when the reckless drive for profit, coupled with the ghost of colonialism, comes up against one community’s determination to hold on to its ancestral land and a young woman’s willingness to sacrifice everything for the sake of her people’s freedom.</p>
-                          
-                        </div>
-                      </div>
-                     </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-
-                    <div class="card" >
-                        <img height="295px"  src="https://www.booklistqueen.com/wp-content/uploads/all-the-children-are-home-patry-francis.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">All the children are home</h5>
-                          <p class="card-text text-center ">Patry Francis</p>
-                          <p>Set in the late 1950s through 1960s in a small town in Massachusetts, All the Children Are Home follows the Moscatelli family—Dahlia and Louie, foster parents, and their long-term foster children Jimmy, Zaidie, and Jon—and the irrevocable changes in their lives when a six-year-old indigenous girl, Agnes, is comes to live with them.</p>
-                          
-                          
-                        </div>
-                      </div>
-                     </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-
-                    <div class="card" >
-                        <img height="250px"  src="https://www.booklistqueen.com/wp-content/uploads/klara-and-the-sun-kazuo-ishiguro.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Klara and the sun</h5>
-                          <p class="card-text text-center ">Kazuo Ishiguro</p>
-                          <p>t is a dystopian science fiction story. Set in the U.S. in an unspecified future, the book is told from the point of view of Klara, a solar-powered AF (Artificial Friend), who is chosen by Josie, a sickly child, to be her companion. The novel was longlisted for the 2021 Booker Prize.</p>
-                          
-                          
-                        </div>
-                      </div>
-                     </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-
-                    <div class="card" >
-                        <img height="320px"  src="https://www.booklistqueen.com/wp-content/uploads/survive-the-night-riley-sager.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Survive the night</h5>
-                          <p class="card-text text-center ">Riley Sager</p>
-                          <p>The book follows Charlie, a young woman who drops out of film college due to the trauma of witnessing the murder of her best friend Maddy by a serial killer.</p>
-                          
-                          
-                        </div>
-                      </div>
-                     </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card" >
-                        <img height="290px"  src="https://www.booklistqueen.com/wp-content/uploads/the-rose-code-kate-quinn.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">The Rose Code</h5>
-                          <p class="card-text text-center ">Kate Quinn</p>
-                          <p>As England prepares to fight the Nazis, three very different women answer the call to mysterious country estate Bletchley Park, where the best minds in Britain train to break German military codes.</p>
-                          
-                          
-                        </div>
-                      </div>
-                     </div>
+              
+               
             </div>
         </div>
     </div>

@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./viewbooks.component.css']
 })
 export class ViewbooksComponent {
+  
   books:any = [
     {
       "title":"To kill a mocking bird",

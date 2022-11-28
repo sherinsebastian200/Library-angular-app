@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin-login.component.css']
 })
 export class AdminLoginComponent {
+  name=""
+  password=""
+
+  adminLog=()=>
+  {
+let data:any={"name":this.name,"password":this.password}
+console.log(data)
+  }
 
 }

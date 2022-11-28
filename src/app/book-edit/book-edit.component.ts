@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./book-edit.component.css']
 })
 export class BookEditComponent {
+  booktitle=""
 
+  bookEdit=()=>
+  {
+    let data:any={"booktitile":this.booktitle}
+    console.log(data)
+  }
 }

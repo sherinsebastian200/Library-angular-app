@@ -7,28 +7,26 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./admin-login.component.css']
 })
 export class AdminLoginComponent {
-  name=""
+  username=""
   password=""
+  
+  constructor(private router:Router){}
 
-  constructor(private route:Router){}
-
-  adminLog=()=>
+  readValue=()=>
   {
-let data:any={"name":this.name,"password":this.password}
-console.log(data)
-  
-if (this.name=="admin" && this.password=="12345") {
-    this.route.navigate(['/uregister'])
+    let data:any={
 
+      "username":this.username,"password":this.password
+    }
+    console.log(data)
 
- 
-  
-} else 
-{
-  alert("invalid credentials")
-  
-}
-
+    if (this.username=="admin"&& this.password=="12345") {
+        this.router.navigate(['/entry'])
+    } else {
+        alert("invalid credentials")
+    }
   }
+ 
+
 
 }

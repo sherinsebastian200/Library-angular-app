@@ -15,17 +15,19 @@ import { BookIssueComponent } from './book-issue/book-issue.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 const myRoute:Routes=[
   {
     path:"",
     component:AdminLoginComponent
   },
   {
-    path:"uregister",
+    path:"register",
     component:UserRegistrationComponent
   },
   {
-    path:"ulogin",
+    path:"login",
     component:UserLoginComponent
   },
   {
@@ -73,7 +75,8 @@ const myRoute:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

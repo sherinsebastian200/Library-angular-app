@@ -15,24 +15,17 @@ export class UserRegistrationComponent {
   phone=""
   username=""
   password=""
-  confirmpassword=""
+  confirm=""
 
-  userReg=()=>
+  readValue=()=>
   {
-    let data:any= {"name":this.name,
-  "aadhar":this.aadhar,
-  "address":this.address,
-  "pincode":this.pincode,
-  "dob":this.dob,
-  "email":this.email,
-  "phone":this.phone,
-  "username":this.username,
-  "password":this.password,
-  "confirmpassword":this.confirmpassword
+  let data:any={
+  
+    "name":this.name,"aadhar":this.aadhar,"address":this.address,"pincode":this.pincode,"dob":this.dob,"email":this.email,
+    "phone":this.phone,"username":this.username,"password":this.password,"confirm":this.confirm
+
   }
   console.log(data)
-}
-  
-
+  }
 
 }

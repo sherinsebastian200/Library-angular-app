@@ -7,23 +7,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./user-login.component.css']
 })
 export class UserLoginComponent {
-  name=""
+  username=""
   password=""
 
-  constructor(private route:Router){}
-  
-userLogin=()=>
-{
-  let data:any= {"name":this.name,"password":this.password}
-  console.log(data)
-  if (this.name=="admin" && this.password=="12345") {
-    this.route.navigate(['/view'])
-} else 
-{
-  alert("invalid credentials")
-  
-}
+constructor(private router:Router){}
 
+  readValue=()=>
+  {
+    let data:any= {
+      "username":this.username,"password":this.password
+    }
+    console.log(data)
+
+    if (this.username=="admin"&& this.password=="12345")
+     {
+      this.router.navigate(['/view'])
+    } 
+    else {
+      alert("invalid credentials")
+  }
   }
 
 }

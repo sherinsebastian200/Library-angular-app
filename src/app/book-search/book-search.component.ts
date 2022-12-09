@@ -28,12 +28,27 @@ api.fetchBook().subscribe(
         if(generated.length){
         this.data=generated
         console.log(generated)}else{
-          alert("not found")
+          alert("Book not found")
         }
 
       }
     )
 
+  }
+  deleteBtnClick=(id:any)=>
+  {
+    let data:any={"id":id}
+    this.api.deleteBook(data).subscribe(
+      (response:any)=>
+      {
+        console.log(response)
+        if (response.status=="success") {
+          alert("Book Deleted Successfully")
+        } else {
+          alert("can not delete")
+        }
+      }
+    )
   }
 
 }
